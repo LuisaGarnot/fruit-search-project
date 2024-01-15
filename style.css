@@ -1,0 +1,63 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+.suggestions:focus {
+background-color: rgb(235, 116, 19);
+}
+
+body {
+  background-image: linear-gradient(90deg,  rgb(255, 234, 0),  rgb(235, 116, 19));
+  height: 100%;
+  width: 100%;
+}
+
+input{
+ font-size: 1.5rem ;
+ border-top-width: 0px;
+ border-right-width: 0px;
+ border-left-width: 0px;
+}
+
+.search-container {
+ text-align: center;
+ margin-top: 25%;
+ 
+}
+.search-container:hover{
+  border:4px, rgb(235, 116, 19)
+}
+.search-container input,
+.search-container .suggestions {
+}
+.search-container input {
+ background-color: rgba(233, 213, 28, 0.428);
+ border-color: rgb(235, 116, 19);
+ line-height: 35px;
+ 
+}
+
+.search-container .suggestions {
+background-color: rgba(233, 213, 28, 0.428);
+ 
+}
+
+ul {
+  /* TODO */
+}
+ul.has-suggestions {
+  /* TODO */
+
+}
+ul li {
+  /* TODO */
+background-color: rgba(233, 213, 28, 0.428);  
+}
+ul li:hover {
+  /* TODO */
+background-color: rgb(235, 116, 19);  
+}
+
+input {
+   /* TODO */
+}
