@@ -38,19 +38,25 @@ input{
 }
 
 .search-container .suggestions {
-background-color: rgba(233, 213, 28, 0.428);
+background-color: transparent;
+color:black;
  
 }
 
 ul {
-  /* TODO */
+  list-style: none; 
 }
 ul.has-suggestions {
   /* TODO */
 
 }
 ul li {
-  /* TODO */
+margin-left: 550px; 
+margin-right: 500px; 
+color: black;  
+text-align: left;  
+width: 250px;
+line-height: 40px;
 background-color: rgba(233, 213, 28, 0.428);  
 }
 ul li:hover {
