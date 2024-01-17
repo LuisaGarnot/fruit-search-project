@@ -9,14 +9,14 @@ const fruits = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Black
 'Raspberry', 'Salmonberry', 'Rambutan', 'Redcurrant', 'Salak', 'Satsuma', 'Soursop', 'Star fruit', 'Strawberry', 'Tamarillo', 'Tamarind',
 'Yuzu'];
 
-function search(str) {
+function search() {
 	//this event listener will listen for the key last released by the user and run searchHandler
      input.addEventListener("keyup", searchHandler)
 
 	return results;
 }
 
-function searchHandler(e) {
+function searchHandler() {
 	//This function is triggered on every keyup event in the search bar. Its main goal is to filter the list
 	// of fruits based on the user's input and then display the relevant suggestions.
 
@@ -32,18 +32,13 @@ function searchHandler(e) {
 		
 } 
 
-function showSuggestions(results, inputVal) {
+function showSuggestions(results) {
 	//This function takes the filtered results and the current input value, then updates the UI to show these suggestions in a dropdown.
   suggestions.innerHTML = ""; 
   
   for(let fruit of results){
 	let listItem = document.createElement('li');
 	listItem.textContent = fruit;
-	listItem.addEventListener("mouseover", (e) => {
-		e.target.style.color = "white";
-
-	})
-	
 	suggestions.appendChild(listItem);
   }
   

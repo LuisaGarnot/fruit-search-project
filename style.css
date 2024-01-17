@@ -61,7 +61,8 @@ background-color: rgba(233, 213, 28, 0.428);
 }
 ul li:hover {
   /* TODO */
-background-color: rgb(235, 116, 19);  
+background-color: rgb(235, 116, 19); 
+color: white; 
 }
 
 input {
